@@ -31,7 +31,7 @@
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
   --bs-primary: purple;
-  --bs-secondary: blue;
+  --bs-secondary: rgb(4, 4, 62);
   --bs-success: #198754;
   --bs-info: #0dcaf0;
   --bs-warning: #ffc107;
@@ -39,7 +39,7 @@
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
   --bs-primary-rgb: 128, 0, 128;
-  --bs-secondary-rgb: 0, 0, 255;
+  --bs-secondary-rgb: 4, 4, 62;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
   --bs-warning-rgb: 255, 193, 7;
@@ -47,7 +47,7 @@
   --bs-light-rgb: 248, 249, 250;
   --bs-dark-rgb: 33, 37, 41;
   --bs-primary-text-emphasis: #330033;
-  --bs-secondary-text-emphasis: #000066;
+  --bs-secondary-text-emphasis: #020219;
   --bs-success-text-emphasis: #0a3622;
   --bs-info-text-emphasis: #055160;
   --bs-warning-text-emphasis: #664d03;
@@ -55,7 +55,7 @@
   --bs-light-text-emphasis: #495057;
   --bs-dark-text-emphasis: #495057;
   --bs-primary-bg-subtle: #e6cce6;
-  --bs-secondary-bg-subtle: #ccccff;
+  --bs-secondary-bg-subtle: #cdcdd8;
   --bs-success-bg-subtle: #d1e7dd;
   --bs-info-bg-subtle: #cff4fc;
   --bs-warning-bg-subtle: #fff3cd;
@@ -63,7 +63,7 @@
   --bs-light-bg-subtle: #fcfcfd;
   --bs-dark-bg-subtle: #ced4da;
   --bs-primary-border-subtle: #cc99cc;
-  --bs-secondary-border-subtle: #9999ff;
+  --bs-secondary-border-subtle: #9b9bb2;
   --bs-success-border-subtle: #a3cfbb;
   --bs-info-border-subtle: #9eeaf9;
   --bs-warning-border-subtle: #ffe69c;
@@ -143,7 +143,7 @@
   --bs-tertiary-bg: #2b3035;
   --bs-tertiary-bg-rgb: 43, 48, 53;
   --bs-primary-text-emphasis: #b366b3;
-  --bs-secondary-text-emphasis: #6666ff;
+  --bs-secondary-text-emphasis: #68688b;
   --bs-success-text-emphasis: #75b798;
   --bs-info-text-emphasis: #6edff6;
   --bs-warning-text-emphasis: #ffda6a;
@@ -151,7 +151,7 @@
   --bs-light-text-emphasis: #f8f9fa;
   --bs-dark-text-emphasis: #dee2e6;
   --bs-primary-bg-subtle: #1a001a;
-  --bs-secondary-bg-subtle: #000033;
+  --bs-secondary-bg-subtle: #01010c;
   --bs-success-bg-subtle: #051b11;
   --bs-info-bg-subtle: #032830;
   --bs-warning-bg-subtle: #332701;
@@ -159,7 +159,7 @@
   --bs-light-bg-subtle: #343a40;
   --bs-dark-bg-subtle: #1a1d20;
   --bs-primary-border-subtle: #4d004d;
-  --bs-secondary-border-subtle: #000099;
+  --bs-secondary-border-subtle: #020225;
   --bs-success-border-subtle: #0f5132;
   --bs-info-border-subtle: #087990;
   --bs-warning-border-subtle: #997404;
@@ -1947,13 +1947,13 @@ progress {
 
 .table-secondary {
   --bs-table-color: #000;
-  --bs-table-bg: #ccccff;
-  --bs-table-border-color: #a3a3cc;
-  --bs-table-striped-bg: #c2c2f2;
+  --bs-table-bg: #cdcdd8;
+  --bs-table-border-color: #a4a4ad;
+  --bs-table-striped-bg: #c3c3cd;
   --bs-table-striped-color: #000;
-  --bs-table-active-bg: #b8b8e6;
+  --bs-table-active-bg: #b9b9c2;
   --bs-table-active-color: #000;
-  --bs-table-hover-bg: #bdbdec;
+  --bs-table-hover-bg: #bebec8;
   --bs-table-hover-color: #000;
   color: var(--bs-table-color);
   border-color: var(--bs-table-border-color);
@@ -3029,19 +3029,19 @@ textarea.form-control-lg {
 
 .btn-secondary {
   --bs-btn-color: #fff;
-  --bs-btn-bg: blue;
-  --bs-btn-border-color: blue;
+  --bs-btn-bg: rgb(4, 4, 62);
+  --bs-btn-border-color: rgb(4, 4, 62);
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #0000d9;
-  --bs-btn-hover-border-color: #0000cc;
-  --bs-btn-focus-shadow-rgb: 38, 38, 255;
+  --bs-btn-hover-bg: #030335;
+  --bs-btn-hover-border-color: #030332;
+  --bs-btn-focus-shadow-rgb: 42, 42, 91;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #0000cc;
-  --bs-btn-active-border-color: #0000bf;
+  --bs-btn-active-bg: #030332;
+  --bs-btn-active-border-color: #03032f;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: blue;
-  --bs-btn-disabled-border-color: blue;
+  --bs-btn-disabled-bg: rgb(4, 4, 62);
+  --bs-btn-disabled-border-color: rgb(4, 4, 62);
 }
 
 .btn-success {
@@ -3164,19 +3164,19 @@ textarea.form-control-lg {
 }
 
 .btn-outline-secondary {
-  --bs-btn-color: blue;
-  --bs-btn-border-color: blue;
+  --bs-btn-color: rgb(4, 4, 62);
+  --bs-btn-border-color: rgb(4, 4, 62);
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: blue;
-  --bs-btn-hover-border-color: blue;
-  --bs-btn-focus-shadow-rgb: 0, 0, 255;
+  --bs-btn-hover-bg: rgb(4, 4, 62);
+  --bs-btn-hover-border-color: rgb(4, 4, 62);
+  --bs-btn-focus-shadow-rgb: 4, 4, 62;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: blue;
-  --bs-btn-active-border-color: blue;
+  --bs-btn-active-bg: rgb(4, 4, 62);
+  --bs-btn-active-border-color: rgb(4, 4, 62);
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: blue;
+  --bs-btn-disabled-color: rgb(4, 4, 62);
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: blue;
+  --bs-btn-disabled-border-color: rgb(4, 4, 62);
   --bs-gradient: none;
 }
 
@@ -6850,8 +6850,8 @@ textarea.form-control-lg {
   text-decoration-color: RGBA(var(--bs-secondary-rgb), var(--bs-link-underline-opacity, 1)) !important;
 }
 .link-secondary:hover, .link-secondary:focus {
-  color: RGBA(0, 0, 204, var(--bs-link-opacity, 1)) !important;
-  text-decoration-color: RGBA(0, 0, 204, var(--bs-link-underline-opacity, 1)) !important;
+  color: RGBA(3, 3, 50, var(--bs-link-opacity, 1)) !important;
+  text-decoration-color: RGBA(3, 3, 50, var(--bs-link-underline-opacity, 1)) !important;
 }
 
 .link-success {
@@ -11965,4 +11965,65 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 250px;
+}
+
+footer.footer {
+  height: 70px;
+  background: rgb(51, 51, 235);
+  border-top: 1px solid rgb(51, 51, 235);
+  clear: both;
+  margin-top: 50px;
+  display: flex;
+  flex: 1;
+  min-height: 0px;
+  padding: 15px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+p {
+  font-family: "Hind Madurai", serif;
+  font-size: 18px;
+}
+
+.Gamestore {
+  position: relative;
+}
+.Gamestore::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/playstation.jpeg);
+  background-size: cover;
+  filter: brightness(0.3);
+}
+.Gamestore * {
+  position: relative;
+}
+
+.Gamestore-content {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-justify {
+  text-align: justify;
 }/*# sourceMappingURL=main.css.map */

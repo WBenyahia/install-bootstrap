@@ -2,67 +2,40 @@
     <div class="Gamestore-content">
         <p> Amis gamers et amies gameuses <i class="bi bi-joystick"></i></p>
         <h1> Bienvenue au Gamestore </h1>
-        <button class="btn btn-primary text-secondary"> Jeux </button>
+        <button class="btn btn-primary text-secondary">La team</button>
         </div>
 </div>
 
 
-<section>
-<article class="bg-primary">
-    <div class="container">
-        <h2 class="text-center text-secondary"> TEXTE ICI blabla </h2>
-        <div class="row row-cols-2 align-items-center">
-            <div class="col"> 
-                <p class="text-justify text-white"> TEXTE ICI bla bla bla bla bla </p>
-            </div>
-            <div>
-                <img class="w-100 rounded" src="../images/jeu-video.jpg"/>
-            </div>
-        </div>
-        <div class="text-center pt-4">
-            <a href="#" class="btn btn-secondary text-primary"> AUTRE BOUTON </a>
-        </div>
+<div id="carouselExampleDark" class="carousel carousel-primary slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
     </div>
-</article>
-</section>
-
-<section>
-    <article class="bg-secondary">
-        <div class="container">
-            <h2 class="text-center text-primary"> TEXTE ICI blabla </h2>
-            <div class="row row-cols-2 align-items-center">
-                <div>
-                    <img class="w-100 rounded" src="../images/promotions-jeux-vidéo.jpg"/>
-                </div>
-                <div class="col"> 
-                    <p class="text-justify text-white"> TEXTE ICI  bla bla bla bla bla bla  bla bla bla bla bla </p>
-                </div>
-            </div>
-            <div class="text-center pt-4">
-                <a href="#" class="btn btn-primary text-secondary"> AUTRE BOUTON </a>
-            </div>
-        </div>
-    </article>
-    </section>
-
-
-    
-<section>
-    <article class="bg-primary">
-        <div class="container">
-            <h2 class="text-center text-secondary"> TEXTE ICI blabla </h2>
-            <div class="row row-cols-2 align-items-center">
-                <div class="col"> 
-                    <p class="text-justify text-white"> TEXTE ICI bla bla bla bla bla </p>
-                </div>
-                <div>
-                    <img class="w-100 rounded" src="../images/jeu-video.jpg"/>
-                </div>
-            </div>
-            <div class="text-center pt-4">
-                <a href="#" class="btn btn-secondary text-primary"> AUTRE BOUTON </a>
-            </div>
-        </div>
-    </article>
-    </section>
-    
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="images/jeu-video.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block text-primary">
+          <h5>Nos jeux vidéos</h5>
+          <p>Venez découvrir notre séléction de jeux vidéos</p>
+          <a href="/jeux" class="button"><button class="btn btn-primary text-secondary">Jeux</button>
+        </div></a>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="images/jeu-video.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block text-primary">
+          <h5>Nos promotions</h5>
+          <p>venez découvrir nos super offres !</p>
+          <a href="/promo" class="button"><button class="btn btn-primary text-secondary" href="/promo">promos</button>
+        </div></a>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>

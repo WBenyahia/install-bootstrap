@@ -1,0 +1,85 @@
+<div class="Gamestore text-center text-white mb-3">
+    <div class="Gamestore-content">
+        <h1>Modification des commandes</h1>
+    </div>
+</div>
+
+<div class="hero-scene text-center text-white">
+    <div class="hero-scene-content">
+        <h1>Ma réservation</h1>
+    </div>
+</div>
+<div class="container">
+    <form>
+        <div class="mb-3">
+            <label for="NomInput" class="form-label">Nom</label>
+            <input disabled type="text" class="form-control" id="NomInput" placeholder="Votre nom" value="Georges" name="Nom" > 
+        </div>
+        <div class="mb-3">
+            <label for="PrenomInput" class="form-label">Prénom</label>
+            <input disabled type="text" class="form-control" id="PrenomInput" placeholder="Votre prénom" value="Fan" name="Prenom"> 
+        </div>
+        <div class="mb-3">
+            <label for="NbConvivesInput" class="form-label">Nombres d'articles</label>
+            <input type="number" class="form-control" id="NbConvivesInput" placeholder="Combien vous êtes habituellement ?"  value="6" name="NbCommandes"> 
+        </div>
+        <div class="mb-3">
+            <label for="DateInput" class="form-label">Date</label>
+            <input type="date" class="form-control" id="DateInput" name="Date"> 
+        </div>
+        <div class="mb-3">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="serviceChoisi" id="boutique1Radio">
+                <label class="form-check-label" for="boutique1Radio">
+                    Boutique 1 <p> 67 rue des pixels 34080 Montpellier</p>
+                </label>
+                </div>
+                <div class="form-check">
+                <input class="form-check-input" type="radio" name="serviceChoisi" id="boutique2Radio" checked>
+                <label class="form-check-label" for="boutique2Radio">
+                    Boutique 2 <p> 54 rue des consoles 34080 Montpellier</p>
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="serviceChoisi" id="boutique3Radio" checked>
+                <label class="form-check-label" for="boutique3Radio">
+                    Boutique 3 <p> 123 rue des cheatcodes 34970 Lattes</p>
+                </label>
+                <p class="text-danger"> Retrait disponible seulement du mardi au samedi, dans toutes nos agences de retrait. </p>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="selectHour" class="form-label">Heure</label>
+            <select class="form-select" id="selectHour" name="Heure">
+                <option>10:00</option>
+                <option>10:15</option>
+                <option>10:30</option>
+                <option>10:45</option>
+                <option>11:00</option>
+                <option>11:15</option>
+                <option>11:30</option>
+                <option>11:45</option>
+                <option>13:10</option>
+                <option>13:15</option>
+                <option>13:30</option>
+                <option>13:45</option>
+                <option>14:00</option>
+                <option>14:15</option>
+                <option>14:30</option>
+                <option>14:45</option>
+                <option>15:00</option>
+                <option>15:15</option>
+                <option>15:30</option>
+                <option>15:45</option>
+                <option>16:00</option>
+                <option>16:15</option>
+                <option>16:30</option>
+                <option>16:45</option>
+            </select>
+        </div>
+        <div class="text-center mb-3">
+            <button type="submit" class="btn btn-primary">Choisir</button>
+            <a href="/annulercommande" class="btn btn-danger">Annuler</a>
+        </div>
+    </form>
+</div>

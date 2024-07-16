@@ -1,0 +1,60 @@
+<div class="Gamestore text-center text-white mb-3">
+    <div class="Gamestore-content">
+        <h1>Inscription</h1>
+    </div>
+</div>
+<div class="container">
+    <form>
+        <div class="mb-3">
+            <label for="NomInput" class="form-label text-secondary">Nom</label>
+            <input type="text" class="form-control" id="NomInput" placeholder="Votre nom" name="Nom"> 
+        </div>
+        <div class="mb-3">
+            <label for="PrenomInput" class="form-label text-secondary">Prénom</label>
+            <input type="text" class="form-control" id="PrenomInput" placeholder="Votre prénom" name="Prenom"> 
+        </div>
+
+        <div class="form-row">
+            <div class="col-md-6 mb-3">
+              <label for="validationCustom03">Ville</label>
+              <input type="text" class="form-control" id="validationCustom03" placeholder="Ville" required>
+              <div class="invalid-feedback">
+ 
+              </div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <label for="validationCustom04">Département</label>
+              <input type="text" class="form-control" id="validationCustom04" placeholder="Département" required>
+              <div class="invalid-feedback">
+ 
+              </div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <label for="validationCustom05">Code postale</label>
+              <input type="text" class="form-control" id="validationCustom05" placeholder="Code postale" required>
+              <div class="invalid-feedback">
+ 
+              </div>
+            </div>
+          </div>
+
+        <div class="mb-3">
+          <label for="EmailInput" class="form-label text-secondary">Email</label>
+          <input type="email" class="form-control" id="EmailInput" placeholder="test@mail.fr" name="Email"> 
+        </div>
+        <div class="mb-3">
+          <label for="PasswordInput" class="form-label text-secondary">Mot de passe</label>
+          <input type="password" class="form-control" id="PasswordInput" name="Password">
+        </div>
+        <div class="mb-3">
+            <label for="ValidatePasswordInput" class="form-label text-secondary">Validez votre mot de passe</label>
+            <input type="password" class="form-control" id="ValidatePasswordInput" name="PasswordConfirm">
+          </div>
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary">Inscription</button>
+        </div>
+    </form>
+    <div class="text-center pt-3">
+        <a href="/signin">Vous avez déjà un compte ? Connectez-vous ici !</a>
+    </div>
+</div>

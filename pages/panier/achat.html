@@ -6,27 +6,16 @@
 
 
 
-
-
-
 <div class="container-fluid my-5  d-flex  justify-content-center">
     <div class="card card-1">
         <div class="card-header bg-white">
             <div class="media flex-sm-row flex-column-reverse justify-content-between  ">
-                <div class="col my-auto"> <h4 class="mb-0 text-secondary">Merci pour votre commande,<span class="text-primary">Georges</span> !</h4> </div>
+                <div class="col my-auto"> <h4 class="mb-0 text-secondary">Merci pour votre commande !</h4> </div>
                 <div class="col-auto text-center  my-auto pl-0 pt-sm-4"> <img class="img-fluid my-auto align-items-center mb-0 pt-3"  src="/images/The Game Store.jpeg" width="115" height="115"> <p class="mb-4 pt-0 Game">The GameStore</p>  </div>
             </div>
         </div>
         <div class="container">
             <form>
-                <div class="mb-3">
-                    <label for="commandeInput" class="form-label">Nouvelle commande</label>
-                    <input disabled type="text" class="form-control" id="commandeInput" placeholder="Votre commande" value="commande" name="commande"> 
-                </div>
-                <div class="mb-3">
-                    <label for="NbConvivesInput" class="form-label">Nombres d'articles</label>
-                    <input disabled type="number" class="form-control" id="NbarticleInput" placeholder="Combien vous êtes habituellement ?"  value="6" name="Nbarticle"> 
-                </div>
                 <div class="mb-3">
                     <label for="DateInput" class="form-label">Date</label>
                     <input type="date" class="form-control" id="DateInput" name="Date"> 
@@ -35,19 +24,31 @@
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="serviceChoisi" id="boutique1Radio">
                         <label class="form-check-label" for="boutique1Radio">
-                            Boutique 1 <p> 67 rue des pixels 34080 Montpellier</p>
+                            Boutique 1 <p> 67 rue des pixels 31000 Toulouse</p>
                         </label>
                         </div>
                         <div class="form-check">
                         <input class="form-check-input" type="radio" name="serviceChoisi" id="boutique2Radio" checked>
                         <label class="form-check-label" for="boutique2Radio">
-                            Boutique 2 <p> 54 rue des consoles 34080 Montpellier</p>
+                            Boutique 2 <p> 54 rue des consoles 59000 Lille</p>
                         </label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="serviceChoisi" id="boutique3Radio" checked>
                         <label class="form-check-label" for="boutique3Radio">
-                            Boutique 3 <p> 123 rue des cheatcodes 34970 Lattes</p>
+                            Boutique 3 <p> 123 rue des cheatcodes 33000 Bordeaux</p>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="serviceChoisi" id="boutique4Radio" checked>
+                        <label class="form-check-label" for="boutique4Radio">
+                            Boutique 4 <p> 23 rue des gamers 44000 Nantes</p>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="serviceChoisi" id="boutique5Radio" checked>
+                        <label class="form-check-label" for="boutique5Radio">
+                            Boutique 5 <p> 678 rue des cheatcodes 75000 Paris</p>
                         </label>
                         <p class="text-danger"> Retrait disponible seulement du mardi au samedi, dans toutes nos agences de retrait. </p>
                     </div>
@@ -83,7 +84,6 @@
                 </div>
                 <div class="text-center mb-3">
                     <button type="submit" class="btn btn-primary">Choisir</button>
-                    <a href="/annulercommande" class="btn btn-danger">Annuler</a>
                 </div>
             </form>
         </div>
@@ -105,7 +105,7 @@
                         <div class="col-12 mt-3 ">
                             <nav aria-label="breadcrumb" class="second ">
                                 <ol class="breadcrumb indigo lighten-6 first  ">
-                                    <li class="breadcrumb-item font-weight-bold "><a class="black-text text-uppercase " href="/jeux"><span class="mr-md-3 mr-1">BACK TO SHOP</span></a> </li>
+                                    <li class="breadcrumb-item font-weight-bold "><a class="black-text text-uppercase " href="/jeux"><span class="mr-md-3 mr-1">BACK TO SHOP</span></a>
                                 </ol>
                             </nav>
                         </div>
@@ -114,55 +114,49 @@
                         <div class="col-md-5">
                             <div class="card border-0 ">
                                 <div class="card-header card-2">
-                                    <p class="card-text text-muted mt-md-4  mb-2 space">Votre commande<span class=" small text-muted ml-2 cursor-pointer">EDIT SHOPPING BAG</span> </p>
+                                    <p class="card-text text-muted mt-md-4  mb-2 space">Votre commande<span class=" small text-muted ml-2 cursor-pointer" id="panierInput"></span> </p>
                                     <hr class="my-2">
                                 </div>
                                 <div class="card-body pt-0">
                                     <div class="row  justify-content-between">
                                         <div class="col-auto col-md-7">
                                             <div class="media flex-column flex-sm-row">
-                                                <img class=" img-fluid" src="images/jeu-video.jpg" width="62" height="62">
+                                                <ul id="maListe">
                                                 <div class="media-body  my-auto">
                                                     <div class="row ">
-                                                        <div class="col-auto"><p class="mb-0"><b>Jeu NITENDO Switch</b></p><small class="text-muted">Livré dans 2 jours</small></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class=" pl-0 flex-sm-col col-auto  my-auto"> <p class="boxed-1">2</p><button type="button" class="btn btn-outline-danger"><i class="bi bi-trash"></i></button></div>
-                                        <div class=" pl-0 flex-sm-col col-auto  my-auto "><p><b>79 €</b></p></div>
-                                    </div>
+                                                        <div class="col-auto"class="col" class="pl-0 flex-sm-col col-auto my-auto"> 
+                                                            <img class=" img-fluid " src="images/jeu-video.jpg" width="62" height="62">
+                                                            <p class="mb-0"><b>Jeu NITENDO Switch</b></p><small class="text-muted">Livré dans 2 jours</small>
+                                                            <p class="boxed-1">2</p><button onclick="supprimerElement(this)" type="button" class="btn btn-outline-danger" id="supprimerInput"><i class="bi bi-trash"></i></button>
+                                                            <p class="pl-0 flex-sm-col col-auto my-auto"><p><b>79 €</b></p></ul></div>
                                     <hr class="my-2">
                                     <div class="row  justify-content-between">
                                         <div class="col-auto col-md-7">
                                             <div class="media flex-column flex-sm-row">
-                                                <img class=" img-fluid " src="images/jeu-video.jpg" width="62" height="62">
-                                                <div class="media-body  my-auto">
+                                                <div class="media-body my-auto">
                                                     <div class="row ">
-                                                        <div class="col"><p class="mb-0"><b>Jeu NITENDO Switch</b></p><small class="text-muted">Livré dans 2 jours</small></div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                                        <div class="col"><p class="mb-0"><b>Jeu NITENDO Switch</b></p><small class="text-muted">Livré dans 2 jours</small> 
+                                                        <img class=" img-fluid " src="images/jeu-video.jpg" width="62" height="62">
+                                                        <p class="mb-0"><b>Jeu NITENDO Switch</b></p><small class="text-muted">Livré dans 2 jours</small>
+                                                        <p class="pl-0 flex-sm-col col-auto  my-auto"> <p class="boxed">3</p><button onclick="supprimerElement(this)" type="button" class="btn btn-outline-danger" id="supprimerInput"><i class="bi bi-trash"></i></button>
+                                                        <p class="pl-0 flex-sm-col col-auto my-auto"><p><b>79 €</b></p></ul></div>
                                         </div>
-                                        <div class="pl-0 flex-sm-col col-auto  my-auto"> <p class="boxed">3</p><button type="button" class="btn btn-outline-danger"><i class="bi bi-trash"></i></button></div>
-                                        <div class="pl-0 flex-sm-col col-auto my-auto"><p><b>79 €</b></p></div>
-                                    </div>
                                     <hr class="my-2">
                                     <div class="row  justify-content-between">
                                         <div class="col-auto col-md-7">
                                             <div class="media flex-column flex-sm-row">
-                                                <img class=" img-fluid " src="images/jeu-video.jpg" width="62" height="62">
+                                                <ul id="maListe">
                                                 <div class="media-body  my-auto">
                                                     <div class="row ">
-                                                        <div class="col"><p class="mb-0"><b>Jeu NITENDO Switch</b></p><small class="text-muted">Livré dans 2 jours</small></div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                                        <div class="col" class="pl-0 flex-sm-col col-auto my-auto"> 
+                                            <img class=" img-fluid " src="images/jeu-video.jpg" width="62" height="62">
+                                            <p class="mb-0"><b>Jeu NITENDO Switch</b></p><small class="text-muted">Livré dans 2 jours</small>
+                                            <p class="boxed-1">2</p><button onclick="supprimerElement(this)" type="button" class="btn btn-outline-danger" id="supprimerInput"><i class="bi bi-trash"></i></button>
+                                            <p class="pl-0 flex-sm-col col-auto my-auto"><p><b>79 €</b></p></ul>
                                         </div>
-                                        <div class="pl-0 flex-sm-col col-auto  my-auto"> <p class="boxed-1">2</p><button type="button" class="btn btn-outline-danger"><i class="bi bi-trash"></i></button></div>
-                                        <div class="pl-0 flex-sm-col col-auto my-auto"><p><b>79 €</b></p></div>
-                                    </div>
-                                    <hr class="my-2">
+                                        </div>
+                                        
+                                            <hr class="my-2">
                                     <div class="row ">
                                         <div class="col">
                                             <div class="row justify-content-between">
@@ -179,9 +173,6 @@
                                             </div><hr class="my-0">
                                         </div>
                                     </div>
-                                    <div class="row mb-5 mt-4">
-                                        <div class="col-md-7 col-lg-6 mx-auto"><button type="button" class="btn btn-block btn-outline-primary btn-lg">ADD GIFT CODE</button><input type="text" class="form-control form-control-sm" name="NAME" id="NAME" aria-describedby="helpId" placeholder="code"></div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -190,3 +181,5 @@
             </div>
         </div>
     </div>
+
+    <script src="/js/shopping.js"></script>
